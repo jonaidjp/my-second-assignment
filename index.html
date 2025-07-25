@@ -64,5 +64,28 @@
       <img src="assets/hero-flower.png" alt="flowers" class="w-full max-w-md mx-auto rounded-lg shadow-md" />
     </div>
   </section>
+  <!-- Plants Section -->  <section class="px-6 py-10 text-center">
+    <h2 class="text-2xl font-bold mb-2"><span  class="text-orange-600">Our</span> Plants</h2>
+    <p class="mb-6">Indulge your senses with the beauty and fragrance of our fresh flower shop. From<br> classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <!-- 8 Plant Cards -->
+      <template id="plant-card">
+        <div class="bg-white p-4 shadow-md rounded">
+          <img src="assets/sample-flower-image.png" alt="Plant" class="w-full mb-2">
+          <h3 class="font-semibold">Lily Blossom</h3>
+          <p>20 USD</p>
+          <button onclick="showAlert()" class="mt-2 bg-orange-500 text-white px-4 py-1 rounded">ADD TO CART</button>
+        </div>
+      </template>
+      <!-- Clone 8 cards -->
+      <script>
+        const container = document.currentScript.parentElement;
+        for (let i = 0; i < 8; i++) {
+          const card = document.getElementById('plant-card').content.cloneNode(true);
+          container.appendChild(card);
+        }
+      </script>
+    </div>
+  </section> 
 
 </body></html>
