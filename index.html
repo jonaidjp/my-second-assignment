@@ -2,6 +2,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flower Shop</title>
+   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     function showAlert() {
       alert("Flower Added to Cart");
@@ -87,5 +88,80 @@
       </script>
     </div>
   </section> 
+  <section class="flex flex-col gap-x-[60px] md:flex-row items-center justify-center px-4 md:px-20 py-10 bg-white">
+  <!-- Image with badge -->
+  <div class="relative w-full md:w-1/2 mb-6 md:mb-0">
+    <!-- Main Image -->
+    <img
+      src="assets/flower-store.png"
+      alt="Flower arrangement"
+      class="w-full h-auto rounded shadow-md"
+    />
+    <!-- Badge Image -->
+    <img
+      src="assets/trusted-badge.png"
+      alt="Trusted Seller Badge"
+      class=" hidden md:block absolute -top-12 right-6  w-20 h-20 md:w-24 md:h-24"
+    />
+  </div>
+
+  <!-- Text Content -->
+  <div class="w-full md:w-1/2 text-left space-y-4">
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Flower & Plants Lover</h2>
+    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+      <li>
+        Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
+        roses to exotic blooms, we offer a wide variety of fresh.
+      </li>
+      <li>
+        Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
+        roses to exotic blooms, we offer a wide variety of fresh.
+      </li>
+      <li>
+        Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
+        roses to exotic blooms, we offer a wide variety of fresh.
+      </li>
+    </ul>
+  </div>
+</section>
+
+  <!--Latest Deals Section-->
+  <section class="px-4 py-12 text-center">
+    <h2 class="text-3xl font-bold mb-2"><span class="text-orange-600">Latest</span> Deals</h2>
+    <p class="text-gray-600 mb-8 max-w-xl mx-auto">
+      Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
+    </p>
+<!-- Card Layout -->
+    <div class="grid md:grid-cols-3 gap-4">
+      <!-- Left Column Cards -->
+      <div class="space-y-4">
+        <div class="relative rounded-lg overflow-hidden">
+          <img src="assets/deal-bloom.png?w=740" class="w-full h-40 object-cover" />
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white font-semibold">
+            <p>60% Off | Bloom Plant</p>
+            <button class="mt-1 underline" onclick="alert('Flower Added to Cart')">Shop Now</button>
+          </div>
+        </div>
+        <div class="relative rounded-lg overflow-hidden">
+          <img src="assets/deal-ana.png?w=740" class="w-full h-40 object-cover" />
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white font-semibold">
+            <p>30% Off | Ana Plant</p>
+            <button class="mt-1 underline" onclick="alert('Flower Added to Cart')">Shop Now</button>
+          </div>
+        </div>
+      </div>
+
+<!-- Right Big Card -->
+      <div class="md:col-span-2">
+        <div class="relative rounded-lg overflow-hidden h-full">
+          <img src="assets/deal-zabo.png?w=740" class="w-full h-80 object-cover" />
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-xl font-semibold">
+            <p>25% Off | Zabo Plant</p>
+            <button class="mt-2 underline text-base" onclick="alert('Flower Added to Cart')">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </body></html>
